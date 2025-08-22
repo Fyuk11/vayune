@@ -107,6 +107,14 @@
   }
 }
 
+/* Header cuando scrollea */
+.header.scrolled {
+  background: rgba(17, 17, 17, 0.75); /* fondo semitransparente */
+  backdrop-filter: blur(8px);          /* blur elegante */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* un poquito más visible */
+  transition: background 0.3s ease, backdrop-filter 0.3s ease;
+}
+
 
 /* SECCIONES GENERALES */
 section {
@@ -141,3 +149,4 @@ section p {
 .footer a:hover {
   color: var(--color-secondary);
 }
+

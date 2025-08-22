@@ -23,3 +23,41 @@ document.addEventListener("DOMContentLoaded", () => {
   if (typeof initForm === "function") initForm();
   if (typeof initWhatsApp === "function") initWhatsApp();
 });
+
+// main.js
+document.addEventListener("DOMContentLoaded", () => {
+  const services = document.querySelectorAll(".service-item");
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+        }
+      });
+    },
+    { threshold: 0.2 }
+  );
+
+  services.forEach(service => observer.observe(service));
+});
+
+// Servicios
+  document.addEventListener("DOMContentLoaded", () => {
+    const services = document.querySelectorAll(".service-item");
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+            observer.unobserve(entry.target); // se anima solo una vez
+          }
+        });
+      },
+      { threshold: 0.2 } // 20% visible en viewport
+    );
+
+    services.forEach((service) => observer.observe(service));
+  });
+
