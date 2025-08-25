@@ -547,3 +547,296 @@
   background: var(--color-primary);
   transform: scale(1.2);
 }
+/* ===== CTA ===== */
+/* .cta {
+  position: relative;
+  padding: 5rem 2rem;
+  text-align: center;
+  color: #fff;
+  overflow: hidden;
+}
+
+/* Fondo degradado animado *
+.cta::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(135deg,
+    var(--color-primary),
+    var(--color-secondary),
+    var(--color-accent));
+  background-size: 400% 400%;
+  animation: gradientMove 12s ease infinite;
+  z-index: 0;
+}
+
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.cta-container {
+  position: relative;
+  z-index: 1;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.cta-title {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.cta-text {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  opacity: 0.9;
+}
+
+/* Botón *
+.cta-btn {
+  display: inline-block;
+  background: #fff;
+  color: var(--color-primary);
+  font-weight: 600;
+  padding: 1rem 2rem;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+.cta-btn:hover {
+  background: var(--color-primary);
+  color: #fff;
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+*/
+/* ===== CTA ===== */
+/* .cta {
+  position: relative;
+  padding: 6rem 2rem;
+  text-align: center;
+  overflow: hidden;
+}
+
+/* Fondo dinámico *
+.cta::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg,
+    var(--color-primary),
+    var(--color-secondary),
+    var(--color-accent));
+  background-size: 300% 300%;
+  animation: gradientMove 12s ease infinite;
+  z-index: 0;
+}
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.cta .container {
+  position: relative;
+  z-index: 1;
+}
+
+/* Glassmorphism box *
+.cta-container {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 3rem 2rem;
+  border-radius: 20px;
+  max-width: 700px;
+  margin: 0 auto;
+  color: #fff;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.cta-title {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+}
+
+.cta-text {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  color: rgba(255,255,255,0.9);
+}
+
+/* Botón *
+.cta-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem 2rem;
+  background: var(--color-primary);
+  color: #fff;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  text-decoration: none;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.cta-btn:hover {
+  background: var(--color-secondary);
+  transform: translateY(-2px);
+}
+
+/* Flechita animada *
+.cta-btn .arrow {
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+.cta-btn:hover .arrow {
+  transform: translateX(6px);
+}
+
+*/
+
+/* ===== CTA (sin glass) ===== */
+.cta {
+  position: relative;
+  padding: 6rem 2rem;
+  text-align: center;
+  overflow: hidden;
+}
+
+/* Fondo dinámico */
+.cta::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg,
+    var(--color-primary),
+    var(--color-secondary),
+    var(--color-accent));
+  background-size: 300% 300%;
+  animation: gradientMove 12s ease infinite;
+  z-index: 0;
+}
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.cta .container {
+  position: relative;
+  z-index: 1;
+  max-width: 700px;
+  margin: 0 auto;
+  color: #fff;
+}
+
+.cta-title {
+  font-size: 2.4rem;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+.cta-text {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: rgba(255,255,255,0.9);
+}
+
+/* Botón */
+.cta-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem 2rem;
+  background: var(--color-primary);
+  color: #fff;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  text-decoration: none;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.cta-btn:hover {
+  background: var(--color-secondary);
+  transform: translateY(-2px);
+}
+
+/* Flechita animada */
+.cta-btn .arrow {
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+.cta-btn:hover .arrow {
+  transform: translateX(6px);
+}
+
+
+/* ===== FAQ ===== */
+.faq {
+  padding: 5rem 0;
+  background: var(--color-bg-alt);
+  color: var(--color-text);
+}
+
+.faq .container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.faq-item {
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.faq-question {
+  width: 100%;
+  background: none;
+  border: none;
+  outline: none;
+  color: inherit;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-align: left;
+  padding: 1rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.faq-question:hover {
+  color: var(--color-primary);
+}
+
+.faq-question .icon {
+  font-size: 1.5rem;
+  transition: transform 0.3s ease;
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease, opacity 0.4s ease;
+  opacity: 0;
+  line-height: 1.6;
+  color: var(--color-text-light);
+}
+
+.faq-item.active .faq-answer {
+  max-height: 500px;
+  opacity: 1;
+  padding-bottom: 1rem;
+}
+
+.faq-item.active .faq-question .icon {
+  transform: rotate(45deg);
+}
