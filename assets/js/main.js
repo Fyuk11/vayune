@@ -1,10 +1,19 @@
 
 // main.js
 
-// Al recargar la página, volver al inicio
-window.onbeforeunload = function () {
-  window.scrollTo(0, 0);
-};
+// Siempre que se recargue la página, volver al inicio
+window.addEventListener("load", function () {
+  // Si tu sección principal tiene un id="inicio"
+  const hero = document.getElementById("inicio");
+
+  if (hero) {
+    hero.scrollIntoView({ behavior: "instant" }); 
+  } else {
+    // Si no encuentra el #inicio, simplemente sube al tope
+    window.scrollTo(0, 0);
+  }
+});
+
 
 // Header scrolled
 document.addEventListener("scroll", () => {

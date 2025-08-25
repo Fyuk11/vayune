@@ -33,7 +33,9 @@
 <body>
   <!-- ===== HEADER ===== -->
   <header class="header">
-  <div class="logo">Vayune</div>
+<!---  <div class="logo">Vayune</div> -->
+  <a href="#hero" class="logo">Vayune</a>
+
 
   <!-- Botón hamburguesa -->
   <button class="nav-toggle" aria-label="Abrir menú">
@@ -46,18 +48,19 @@
   <nav class="nav-menu">
     <ul>
       <li><a href="#hero" class="active">Inicio</a></li>
-      <li><a href="#services">Servicios</a></li>
-      <li><a href="#portfolio">Portafolio</a></li>
-      <li><a href="#contact">Contacto</a></li>
+      <li><a href="#servicios">Servicios</a></li>
+      <li><a href="#portafolio">Portafolio</a></li>
+               <li><a href="#faq">FAQ</a></li>
+      <li><a href="#contacto">Contacto</a></li>
     </ul>
   </nav>
 </header>
 
 
   <!-- ===== HERO VIDEO ===== -->
-  <section class="hero">
-  <video autoplay muted loop playsinline poster="assets/videos/hero-fallback.jpg">
-     <source src="assets/videos/hero-bg.webm" type="video/webm">
+  <section id="hero" class="hero">
+  <video autoplay muted loop playsinline poster="assets/videos/hero-fallback.jpg" aria-hidden="true">
+     <source src="assets/video/hero-bg.webm" type="video/webm">
      <source src="assets/video/hero-bg.mp4" type="video/mp4">
     <!-- fallback si el navegador no soporta video -->
     <img src="assets/videos/hero-fallback.jpg" alt="Fondo hero">
@@ -481,11 +484,11 @@
     <div class="footer-right">
       <nav class="footer-nav">
         <ul>
-          <li><a href="#servicios">Servicios</a></li>
-          <li><a href="#casos">Casos de Éxito</a></li>
-          <li><a href="#testimonios">Testimonios</a></li>
-          <li><a href="#faq">FAQ</a></li>
-          <li><a href="#contacto">Contacto</a></li>
+      <li><a href="#hero" class="active">Inicio</a></li>
+      <li><a href="#servicios">Servicios</a></li>
+      <li><a href="#portafolio">Portafolio</a></li>
+               <li><a href="#faq">FAQ</a></li>
+      <li><a href="#contacto">Contacto</a></li>
         </ul>
       </nav>
 
@@ -511,9 +514,17 @@
 
 
   <!-- ===== WHATSAPP FLOAT ===== -->
-  <a href="https://wa.me/5491112345678" target="_blank" class="whatsapp">
+<!--  <a href="https://wa.me/5491112345678" target="_blank" class="whatsapp">
     💬
   </a>
+-->
+<!-- ===== WHATSAPP FLOAT ===== -->
+<a href="https://wa.me/5491112345678" target="_blank" class="whatsapp">
+  <img src="assets/img/icon-whatsapp.png" alt="WhatsApp">
+</a>
+
+
+
 
   <!-- ===== JS ===== -->
 <!-- JS: el orden importa -->
