@@ -61,38 +61,3 @@ document.addEventListener("DOMContentLoaded", () => {
     services.forEach((service) => observer.observe(service));
   });
 
-
-  // ===== TESTIMONIOS AUTO SLIDER =====
-// ===== TESTIMONIOS SLIDER =====
-function initTestimoniosSlider() {
-  const slider = document.getElementById("testimoniosSlider");
-  const prevBtn = document.querySelector(".slider-btn.prev");
-  const nextBtn = document.querySelector(".slider-btn.next");
-
-  if (!slider) return;
-
-  let index = 0;
-  const cards = slider.querySelectorAll(".testimonial-card");
-  const total = cards.length;
-
-  function showSlide(i) {
-    index = (i + total) % total; // loop infinito
-    slider.style.transform = `translateX(-${index * 100}%)`;
-  }
-
-  nextBtn.addEventListener("click", () => showSlide(index + 1));
-  prevBtn.addEventListener("click", () => showSlide(index - 1));
-
-  // autoplay
-  setInterval(() => showSlide(index + 1), 5000);
-
-  // swipe en mobile
-  let startX = 0;
-  slider.addEventListener("touchstart", e => startX = e.touches[0].clientX);
-  slider.addEventListener("touchend", e => {
-    let endX = e.changedTouches[0].clientX;
-    if (startX - endX > 50) showSlide(index + 1);
-    if (endX - startX > 50) showSlide(index - 1);
-  });
-}
-document.addEventListener("DOMContentLoaded", initTestimoniosSlider);
